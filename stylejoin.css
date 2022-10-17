@@ -1,0 +1,209 @@
+*{
+    font-family: helvetica;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),#3551b5), url(banner.jpg);
+    background-position: top;
+    background-size: cover;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+.navbar ul li::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+body{
+    margin: 0;
+    align-items: center;
+}
+.banner .daftar{
+    align-content: center;
+    padding-left: 50%;
+}
+button{
+    font-size: 24px;
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    font-weight: bold;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: white;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover{
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+}
+.title{
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+form{
+    width: 100%;
+    max-width: 700px;
+    align-items: center;
+}
+.pendaftaran{
+    margin-bottom: 30px;
+    position: relative;
+}
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid#fff;
+    color: white;
+    background: transparent;
+    font-size: 16px;
+}
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: white;
+    cursor: text;
+    transition: 0.2s;
+}
+select{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid#fff;
+    color: white;
+    background: transparent;
+    font-size: 16px;
+}
+button{
+    padding: 10px;
+    color: white;
+    outline: none;
+    background: transparent;
+    border: 1px solid white;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    margin:0;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: white;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label,
+select:focus~label,
+select:valid~label
+{
+    top: -30px;
+    font-size: 12px;
+
+}
+.row1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row1 .pendaftaran{
+    flex-basis: 48%;
+}
+.row2 .pendaftaran{
+    flex-basis: 48%;
+}
+.row3 .pendaftaran{
+    flex-basis: 48%;
+}
+.row4 .pendaftaran{
+    flex-basis: 48%;
+}
+#provinsi, #kota, #kecamatan, #keahlian{
+    color: white;
+}
+#provinsi option, #kota option, #kecamatan option, #keahlian option{
+    color: black;
+}
